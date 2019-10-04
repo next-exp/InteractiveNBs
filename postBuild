@@ -1,5 +1,10 @@
 #!/bin/bash
-
-git clone https://github.com/nextic/IC $HOME/IC
-cd $HOME/IC; python setup.py develop; cd -
-git clone https://github.com/nextic/ICAROS $HOME/ICAROS
+git clone https://github.com/nextic/IC.git $HOME/IC
+cd $HOME/IC; python setup.py develop;
+cd invisible_cities/database/
+rm *.sqlite3
+wget https://www.dropbox.com/s/whmoa3md4a5bqer/localdb.DEMOPPDB.sqlite3;
+wget https://www.dropbox.com/s/pn59wicvae0gsqh/localdb.NEWDB.sqlite3;
+wget https://www.dropbox.com/s/7ih8seey1j02945/localdb.NEXT100DB.sqlite3;
+cd -
+git clone https://github.com/nextic/ICAROS.git $HOME/ICAROS
