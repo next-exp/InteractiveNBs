@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git clone https://github.com/nextic/IC $HOME/IC
+cd $HOME/IC; python setup.py develop; cd -
+git clone https://github.com/nextic/ICAROS $HOME/ICAROS
