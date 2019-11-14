@@ -24,7 +24,7 @@ dependencies:
   - pytest-xdist = 1.23.2
   - pip:
     - pytest-instafail==0.4.0
+    - probfit
+    - iminuit
   - imagemagick
   - ffmpeg
-  - probfit
-  - minuit
