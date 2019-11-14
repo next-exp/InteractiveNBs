@@ -25,4 +25,6 @@ dependencies:
   - pip:
     - pytest-instafail==0.4.0
   - imagemagick
-  - ffmpeg  
+  - ffmpeg
+  - probfit
+  - minuit
